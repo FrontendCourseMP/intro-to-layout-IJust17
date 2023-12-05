@@ -1,4 +1,5 @@
 :root {
+    font-size: 62.5%;
     --text-primary: #1A4D70;
     --text-secondary: #000000;
     --color-orange: #F9572B;
@@ -7,13 +8,47 @@
     font-family: Roboto, "sans-serif", Helvetica;
 }
 
-h1 {
+/* roboto-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/roboto-v30-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* roboto-500 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/roboto-v30-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* roboto-700 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/roboto-v30-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* roboto-900 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    src: url('../fonts/roboto-v30-latin-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+
+  h1 {
     visibility: hidden;
 }
 
 .h2main {
-    text-shadow: 0px 0px 12px rgba(0, 0, 0, 0.25);
-    font-size: 32px;
+    text-shadow: 0rem 0rem 1.2rem rgba(0, 0, 0, 0.25);
+    font-size: 3.2rem;
     font-style: normal;
     font-weight: 700;
     line-height: normal; 
@@ -21,7 +56,7 @@ h1 {
 }
 
 h3 {
-    font-size: 16px;
+    font-size: 1.6rem;
     font-style: normal;
     font-weight: 900;
     line-height: normal;
@@ -29,7 +64,7 @@ h3 {
 }
 
 h2 {
-    font-size: 36px;
+    font-size: 3.6rem;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -37,7 +72,7 @@ h2 {
 }
 
 .h2b {
-    font-size: 36px;
+    font-size: 3.6rem;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -45,7 +80,7 @@ h2 {
 }
 
 .podzag900 {
-    font-size: 16px;
+    font-size: 1.6rem;
     font-style: normal;
     font-weight: 900;
     line-height: normal;
@@ -53,14 +88,14 @@ h2 {
 }
 
 .podzag900b {
-    font-size: 16px;
+    font-size: 1.6rem;
     font-style: normal;
     font-weight: 900;
     line-height: normal;
     color: var(--text-primary)
 }
 .podzag500 {
-    font-size: 16px;
+    font-size: 1.6rem;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -68,7 +103,7 @@ h2 {
 }
 
 .podzag500w {
-    font-size: 16px;
+    font-size: 1.6rem;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -76,7 +111,7 @@ h2 {
 }
 
 .opismall {
-    font-size: 16px;
+    font-size: 1.6rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -84,15 +119,16 @@ h2 {
 }
 
 .opismallw {
-    font-size: 16px;
+    font-size: 1.6rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    opacity: 0.6;
     color: var(--text-secondary)
 }
 
 .formsmall {
-    font-size: 14px;
+    font-size: 1.4rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
