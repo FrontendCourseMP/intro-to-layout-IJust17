@@ -338,3 +338,7 @@ h2 {
     border-radius: 4px;
     font-family: 'Roboto';
 }
+
+.blockm{
+    display: block;
+}
