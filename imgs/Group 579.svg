@@ -1,0 +1,16 @@
+<svg width="150" height="6" viewBox="0 0 150 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="150" height="6" fill="#F5F5F5"/>
+<g id="Sahara-landing" clip-path="url(#clip0_0_1)">
+<rect width="392" height="8493" transform="translate(-121 -3354)" fill="white"/>
+<g id="Group 579">
+<path id="Vector 6" d="M3 3H35" stroke="#F9572B" stroke-width="6" stroke-linecap="round"/>
+<path id="Vector 7" d="M59 3H91" stroke="#D8D8D8" stroke-width="6" stroke-linecap="round"/>
+<path id="Vector 8" d="M115 3H147" stroke="#D8D8D8" stroke-width="6" stroke-linecap="round"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_0_1">
+<rect width="392" height="8493" fill="white" transform="translate(-121 -3354)"/>
+</clipPath>
+</defs>
+</svg>

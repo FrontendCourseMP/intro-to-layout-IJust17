@@ -1,48 +1,79 @@
 :root {
     font-size: 62.5%;
     --text-primary: #1A4D70;
-    --text-secondary: #000000;
+    --text-secondary: black;
     --color-orange: #F9572B;
     --color-grey-soft: #EFEFEF;
     --color---grey-hard: #777;
+    --color----Blue: #1A4D70;
     font-family: Roboto, "sans-serif", Helvetica;
 }
 
-/* roboto-regular - latin */
+/* roboto-300 - cyrillic_latin */
 @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/roboto-v30-cyrillic_latin-300.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* roboto-regular - cyrillic_latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
-    src: url('../fonts/roboto-v30-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-  }
-  /* roboto-500 - latin */
-  @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    src: url('../fonts/roboto-v30-cyrillic_latin-regular.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* roboto-500 - cyrillic_latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
-    src: url('../fonts/roboto-v30-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-  }
-  /* roboto-700 - latin */
-  @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    src: url('../fonts/roboto-v30-cyrillic_latin-500.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* roboto-700 - cyrillic_latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
-    src: url('../fonts/roboto-v30-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-  }
-  /* roboto-900 - latin */
-  @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    src: url('../fonts/roboto-v30-cyrillic_latin-700.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* roboto-900 - cyrillic_latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 900;
-    src: url('../fonts/roboto-v30-latin-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-  }
+    src: url('../fonts/roboto-v30-cyrillic_latin-900.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
 
+* {
+    box-sizing: border-box;
+}
 
-  h1 {
+body{
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
     visibility: hidden;
 }
 
@@ -51,7 +82,7 @@
     font-size: 3.2rem;
     font-style: normal;
     font-weight: 700;
-    line-height: normal; 
+    line-height: normal;
     color: var(--text-secondary)
 }
 
@@ -94,6 +125,7 @@ h2 {
     line-height: normal;
     color: var(--text-primary)
 }
+
 .podzag500 {
     font-size: 1.6rem;
     font-style: normal;
@@ -132,5 +164,177 @@ h2 {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    color:var(--text-secondary)
+    color: var(--text-secondary)
+}
+
+.flex {
+    display: flex;
+}
+
+.burger {
+    margin-left: auto;
+    background: transparent;
+    border: none;
+}
+
+.ordercall {
+    background-color: var(--color-orange);
+    border: none;
+    border-radius: 4px;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-family: 'Roboto';
+    font-weight: 500;
+    line-height: normal;
+    color: #EFEFEF;
+}
+
+.preview {
+    background: url("./imgs2/Pic.png") no-repeat;
+    background-size: contain;
+}
+
+.aboutcompany{
+    background-color: var(--color-grey-soft);
+}
+
+.ourequipment{
+    background-color: white;
+}
+
+.toolkitmain{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    align-self:stretch;
+    background-size: contain;
+    padding-right: 24px;
+    padding-left:24px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.toolkits{
+    padding:32px;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self:stretch;
+    border-radius:8px;
+    background-color: white;
+}
+
+.ul, ol, li{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.ourbenefits{
+    background-color: var(--color----Blue);
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+.ourequipline{
+    background-color: var(--color-grey-soft);
+    overflow-x: hidden;
+    max-height: 5.1rem;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+.ourequipbutton{
+    background-color: var(--color-orange);
+    border: none;
+    overflow-x: hidden;
+    width: 13.8rem;
+    height: 5.1rem;
+    margin-left: 2.4rem;
+    font-family: 'Roboto';
+}
+
+.orangeline{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.aboutcompanysigns{
+    margin-left: 9rem;
+}
+
+.aboutcompanysignstext{
+    margin-left: 9rem;
+    height: 3.8rem;
+    width: 20rem;
+}
+
+.mrgleft24{
+    margin-left: 2.4rem;
+}
+
+.mrgleft124{
+    margin-left: 11.9rem;
+}
+
+.center{
+    display: flex;
+    margin-left:auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.zakazpics{
+    display: flex;
+    margin-left:auto;
+    margin-right: auto;
+    margin-top: 5.6rem;
+}
+
+.centertext{
+    margin-left:auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.consultation{
+    background-image:url(./imgs2/bba_pumps_ba150e_d285_diesel_driven_6-inch_dewatering_pumpset\ 2.png);
+    padding-bottom: 8rem;
+}
+
+.rumap{
+    width: 39rem;
+    height: auto;
+}
+
+.rumaplist{
+    list-style-type: disc;
+}
+
+.rumapdiv{
+    display: flex;
+    flex-direction: row;
+    gap:0.8rem;
+    width: 16.7rem;
+    height: 5.7rem;
+    margin-left: 2rem;
+}
+
+.labelmargin{
+    margin: 0;
+}
+
+.sumbit1{
+    background-color: var(--color-orange);
+    border: none;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    color: #EFEFEF;
+    justify-content: center;
+    border-radius: 4px;
+    font-family: 'Roboto';
 }
