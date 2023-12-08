@@ -1,7 +1,7 @@
 :root {
     font-size: 62.5%;
     --text-primary: #1A4D70;
-    --text-secondary: black;
+    --text-secondary: white;
     --color-orange: #F9572B;
     --color-grey-soft: #EFEFEF;
     --color---grey-hard: #777;
@@ -171,6 +171,12 @@ h2 {
     display: flex;
 }
 
+.logo{
+    background: transparent;
+    border: none;
+    margin-left: 2.4rem;
+}
+
 .burger {
     margin-left: auto;
     background: transparent;
@@ -190,8 +196,8 @@ h2 {
 }
 
 .preview {
-    background: url("./imgs2/Pic.png") no-repeat;
-    background-size: contain;
+    background-image: url("./imgs2/saharapreview.png");
+    background-size: cover;
 }
 
 .aboutcompany{
@@ -236,6 +242,22 @@ h2 {
     margin: 0 auto;
 }
 
+.podzagbenf{
+    /* Roboto Bold 24 */
+    font-family: Roboto;
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+    margin-top: 4rem;
+}
+
+.gapp16{
+    gap:1.6rem;
+}
+
 .ourequipline{
     background-color: var(--color-grey-soft);
     overflow-x: hidden;
@@ -259,6 +281,10 @@ h2 {
     display: flex;
     margin-left: auto;
     margin-right: auto;
+}
+
+.orangeline2{
+    margin-bottom: 3.2rem;
 }
 
 .aboutcompanysigns{
@@ -286,6 +312,13 @@ h2 {
     text-align: center;
 }
 
+.padul{
+    padding-left: 0;
+}
+
+.mrgup40{
+    margin-top: 4rem;
+}
 .zakazpics{
     display: flex;
     margin-left:auto;
@@ -293,19 +326,28 @@ h2 {
     margin-top: 5.6rem;
 }
 
+.stis{
+    margin-bottom: 8rem;
+}
 .centertext{
     margin-left:auto;
     margin-right: auto;
     text-align: center;
+    margin-bottom: 3.2rem;
 }
 
 .consultation{
-    background-image:url(./imgs2/bba_pumps_ba150e_d285_diesel_driven_6-inch_dewatering_pumpset\ 2.png);
+    background-image:url(./imgs2/consultation-backround.png);
     padding-bottom: 8rem;
 }
 
+.consulth2{
+    width: 34.2rem;
+    height: 25.2rem;
+}
+
 .rumap{
-    width: 39rem;
+    width: 39.2rem;
     height: auto;
 }
 
@@ -315,11 +357,16 @@ h2 {
 
 .rumapdiv{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     gap:0.8rem;
-    width: 16.7rem;
-    height: 5.7rem;
     margin-left: 2rem;
+    width: 120rem;
+}
+.rumapul{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 .labelmargin{
@@ -341,4 +388,89 @@ h2 {
 
 .blockm{
     display: block;
+}
+
+
+.formplacing{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-left: 2.4rem;
+}
+
+.left24{
+    margin-left: 2.4rem;
+}
+
+.formrazm{
+    width: 342px;
+    height: 43px;
+    padding: 12px 40px;
+    gap: 10px;
+    border: none;
+    border-radius: 4px;
+}
+
+.contacts{
+    background-image: url(./imgs2/contactsbackground.png);
+}
+
+.footer1{
+    background-color: var(--color----Blue);
+}
+
+.sumbitdown{
+    background-color: var(--color-orange);
+    border: none;
+    border-radius: 4px;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-family: 'Roboto';
+    font-weight: 500;
+    line-height: normal;
+    color: #EFEFEF;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    width: 16.1rem;
+    height: 4.3rem;
+}
+
+.sumbdowndiv{
+    margin-left: 2.4rem;
+    margin-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.centertext2{
+    display: flex;
+    justify-content: center;
+}
+
+.contlargeboxes{
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    align-items: center;
+    margin-top: 3.2rem;
+}
+
+.orangebox{
+    background-color: var(--color-orange);
+    width: 34.2rem;
+    height: 32.5rem;
+    padding-left: 3.2rem;
+    padding-top: 3.2rem;
+    padding-bottom: 3.2rem;
+}
+
+.orngtextmrg{
+    margin-top: 0.4rem;
+    margin-bottom: 2.4rem;
+    padding: 0;
+}
+
+.orngtextpodzag{
+    margin-top: 1.2rem;
+    margin-bottom: 0;
 }
