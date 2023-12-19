@@ -75,6 +75,7 @@ body {
 
 h1 {
     visibility: hidden;
+    display: none;
 }
 
 .h2main {
@@ -90,8 +91,18 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    max-width: 40rem;
+    margin: 0 auto;
 }
+.wrapper22{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 40rem;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
 .previewzag{
     display: flex;
     margin-left: auto;
@@ -115,12 +126,23 @@ h1 {
     gap: 29px;
     justify-content: center;
     margin-bottom: 40px;
+    position: relative;
 }
 
 .prmailback{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
     height: 100%;
-    background-color: white;
+    background-color: transparent;
+}
+
+.prmailgraphic{
+    position: absolute;
+    top: -112px;
+    left: -51px;
+
 }
 .p1mg{
     margin-bottom: 6px;
@@ -129,7 +151,6 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     gap: 23px;
-    padding-left: 60px;
 }
 
 .conts{
@@ -223,6 +244,24 @@ nav{
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
+    position: relative;
+    z-index: 2;
+}
+
+header{
+    position: relative;
+}
+
+.headerback{
+    position: absolute;
+    top: -20px;
+    z-index: 1;
+}
+
+.wrapperheader{
+    max-width: 40rem;
+    margin: 0 auto;
+
 }
 
 .logo {
@@ -257,11 +296,13 @@ nav{
 }
 
 .preview {
-    background-image: url("./imgs2/saharapreview.png");
-    background-size: cover;
-    background-repeat:space;
-    background-position-y: top;
-    background-position-x: center;
+    background-image: url("./imgs2/saharapreview.jpg");
+    overflow-y: hidden;
+    background-size: 1956px 801px;
+    background-repeat: no-repeat;
+    background-position-y: -106%;
+    background-position-x: 59.8%;
+    overflow-x: hidden;
 }
 
 .aboutcompany {
@@ -271,14 +312,16 @@ nav{
 .aboutcompanywrapper{
     padding-top: 40px;
     padding-bottom: 40px;
+    max-width: 40rem;
+    margin: 0 auto;
 }
 
 .bumpabout{
     width: 533px;
     height: 242px;
     padding-left: 24px;
-    padding-right: 50px;
-    width: 120%;
+    object-fit: cover;
+    object-position: -115px;
 }
 
 .ourequipment {
@@ -288,6 +331,8 @@ nav{
 .ourequipmentwrapper{
     padding-top: 48px;
     padding-bottom: 48px;
+    max-width: 40rem;
+    margin: 0 auto;
 }
 
 .toolkitmain {
@@ -305,9 +350,17 @@ nav{
     padding: 32px;
     flex-direction: column;
     align-items: flex-start;
-    align-self: stretch;
     border-radius: 8px;
     background-color: white;
+}
+
+.toolkitslast{
+    padding: 32px;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 8px;
+    background-color: white;
+    margin-bottom: -40%;
 }
 
 .ul,
@@ -336,19 +389,19 @@ li {
 
 .ourequipline {
     background-color: var(--color-grey-soft);
-    overflow-x: hidden;
-    max-height: 5.1rem;
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
+    max-height: 51px;
     margin-bottom: 48px;
+    display: flex;
+    width: 500px;
+    gap: 25px;
 }
 
 .ourequiph2{
-    margin-left: 18px;
-    margin-right: 32px;
-    text-align: center;
     margin-bottom: 32px;
+    width: 342px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 .ourequiph3{
     margin-left: 24px;
@@ -372,11 +425,21 @@ li {
 .ourequipbutton {
     background-color: var(--color-orange);
     border: none;
-    overflow-x: hidden;
-    width: 13.8rem;
-    height: 5.1rem;
-    margin-left: 2.4rem;
+    width: 138px;
+    height: 51px;
+    margin-left: 25px;
     font-family: 'Roboto';
+    padding: 16px 18px 16px 18px;
+;
+}
+
+.ourequipbutton2 {
+    background-color: var(--color-grey-soft);
+    border: none;
+    width: 138px;
+    height: 51px;
+    font-family: 'Roboto';
+    padding: 16px 18px 16px 18px;
 }
 
 .mrgleft24 {
@@ -441,6 +504,8 @@ li {
 
 .ourbenefitswrapper{
     padding-top: 40px;
+    max-width: 40rem;
+    margin: 0 auto;
 }
 
 .h2benefits{
@@ -452,6 +517,11 @@ li {
     margin-right: 25px;
 }
 .ourbenefits {
+    background: url(./imgs2/ourbenefitsback.jpg);
+    background-size: 1920px 583px;
+    background-repeat: no-repeat;
+    background-position-x: 50.5%;
+    background-position-y: -3%;
     background-color: var(--color----Blue);
 }
 
@@ -459,8 +529,32 @@ li {
     padding-top: 40px;
 }
 
+.customersh2{
+    margin-top: 333.5px;
+}
+
+.customerssection{
+    position: relative;
+    max-width: 40rem;
+    margin: 0 auto;
+}
+
+.customersmini{
+    position: absolute;
+    z-index: -1;
+    top: 58.5px;
+}
+
 .consultationwrapper{
     padding-top: 40px;
+    max-width: 40rem;
+    margin: 0 auto;
+    position: relative;
+}
+
+.graphicconsult{
+    position: absolute;
+    bottom: -81px;
 }
 
 .center {
@@ -475,7 +569,7 @@ li {
 }
 
 .mrgup40 {
-    margin-top: 4rem;
+    padding-top: 40px;;
 }
 
 .zakazpics {
@@ -497,8 +591,10 @@ li {
 }
 
 .consultation {
-    background-image: url(./imgs2/consultation-backround.png);
-    padding-bottom: 8rem;
+    background-image: url(./imgs2/consultationback.jpg);
+    padding-bottom: 80px;
+    background-size: cover;
+    background-position-x: 50%;
 }
 
 .consulth2 {
@@ -561,6 +657,8 @@ li {
 
 .contactswrapper{
     padding-top: 40px;
+    max-width: 40rem;
+    margin: 0 auto;
 }
 
 
@@ -610,9 +708,16 @@ li {
 
 .objectswrapper{
     padding-top: 40px;
+    max-width: 40rem;
+    margin: 0 auto;
 }
 .contacts {
-    background-image: url(./imgs2/contactsbackground.png);
+    background: url(./imgs2/contactsback.jpg);
+    background-size: 1920px 583px;
+    background-repeat: no-repeat;
+    background-position-x: 50.5%;
+    background-position-y: -3%;
+    background-color: var(--color----Blue);
 }
 
 .footer1 {
@@ -705,7 +810,6 @@ li {
     display: flex;
     flex-direction: column;
     margin-top: 40px;
-    margin-bottom: 8px;
 }
 
 .formp2{
@@ -730,6 +834,7 @@ li {
     height: 180px;
     margin-left: 24px;
     border-radius: 4px;
+    border: none;
 }
 
 .commentlabel{
@@ -741,11 +846,16 @@ li {
 .footerdiv{
     display: flex;
     flex-direction: row;
-    padding: 20px 24px 40px 24px;
+    padding: 20px 24px 36px 24px;
     gap: 149px;
 }
 
 .footervector{
     margin-left: 24px;
     margin-right: 24px;
+}
+
+.footerwrapper{
+    margin: 0 auto;
+    max-width: 40rem;
 }

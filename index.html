@@ -11,10 +11,13 @@
 
 <body>
     <header>
-        <nav>
-            <button type="button" class="logo"><img src="./imgs/Logo.svg"></button>
-            <button class="burger" type="button"><img src="./imgs/Menu.svg"></button>
-        </nav>
+        <div class="wrapperheader">
+            <nav>
+                <button type="button" class="logo"><img src="./imgs/Logo.svg"></button>
+                <button class="burger" type="button"><img src="./imgs/Menu.svg"></button>
+            </nav>
+            <img src="./css/imgs2/headerback.svg" alt="окантовка" class="headerback">
+        </div>
     </header>
     <main>
         <h1>Аренда насосных спецстанций Сахара</h1>
@@ -25,9 +28,13 @@
                     <p class="podzag500w">для водопонижения и водоотведения</p>
                 </div>
                 <img src="./imgs/Bump1.png" alt="станция" class="previewstation">
-                <div><button type="button" class="ordercall center">Заказать звонок</button></div>
+                <button type="button" class="ordercall center">Заказать звонок</button>
+            </div>
+            
+            <div class="wrapper22">
                 <div class="prmailback">
                     <div class="prmailmain">
+                        <img src="./imgs/Graphic (1).svg" alt="graphic" class="prmailgraphic">
                         <div class="previewmail">
                             <svg width="58" height="58" viewBox="0 0 58 58" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -104,7 +111,7 @@
                         <p class="podzag900b aboutcompanysignstext">Лет на рынке водопонижения</p>
                     </div>
                 </div>
-                <img src="./imgs/bumpabout.png" alt="bumpabout" class="bumpabout">
+                <img src="./imgs/bumpabout.jpg" alt="bumpabout" class="bumpabout">
             </div>
         </section>
         <section class="ourequipment">
@@ -113,8 +120,8 @@
                 <div><img src="./imgs/Line.svg" class="orangeline orangeline2" alt="#"></div>
                 <div class="ourequipline">
                     <button type="button" class="podzag900 ourequipbutton">BA100K D193</button>
-                    <button type="button" class="podzag900b ourequipbutton">BA150E D285</button>
-                    <button type="button" class="podzag900b ourequipbutton">BA180E D328</button>
+                    <button type="button" class="podzag900b ourequipbutton2">BA150E D285</button>
+                    <button type="button" class="podzag900b ourequipbutton2">BA180E D328</button>
                 </div>
                 <h3 class="ourequiph3">BA100K D193</h3>
                 <div class="ourequiptext">
@@ -156,7 +163,7 @@
                             наши установки выпущены не позже 2017
                             года, в идеальном техническом состоянии.</p>
                     </li>
-                    <li class="toolkits">
+                    <li class="toolkitslast">
                         <img src="./imgs/Icon-3.svg" alt="консультациязначок">
                         <h3 class="podzagbenf">Бесплатный выезд и <br />консультация</h3>
                         <div><img src="./imgs/Line.svg" class="orangeline2" alt="#"></div>
@@ -167,9 +174,10 @@
                 </ul>
             </div>
         </section>
-        <section>
+        <section class="customerssection">
+            <img src="./imgs/customersmini.svg" alt="узоры" class="customersmini">
             <div class="customers">
-                <h2 class="centertext h2b">Заказчики</h2>
+                <h2 class="centertext h2b customersh2">Заказчики</h2>
                 <div><img src="./imgs/Line.svg" class="orangeline" alt="#"></div>
                 <ul class="padul">
                     <li><img src="./imgs/Aarsleff.png" alt="Аарслефф" class="center mrgup40"></li>
@@ -181,6 +189,7 @@
         </section>
         <section class="consultation">
             <div class="consultationwrapper">
+                <img src="./css/imgs2/graphicconsult.svg" class="graphicconsult">
                 <h2 class="centertext consulth2">Закажите консультацию, расчет стоимости работ или выезд специалиста на
                     объект</h2>
                 <div><img src="./imgs/Line.svg" class="orangeline" alt="#"></div>
@@ -282,10 +291,12 @@
         </section>
     </main>
     <footer class="footer1">
+        <div class="footerwrapper">
         <img src="./imgs/Vector 9.svg" alt="линия" class="footervector">
         <div class="footerdiv">
             <p class="opismallw">2015-2023 г.</p>
             <img src="./imgs/Logofooter.svg" alt="сахарагруп">
+        </div>
         </div>
     </footer>
 </body>
