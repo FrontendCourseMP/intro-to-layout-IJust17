@@ -859,3 +859,8 @@ li {
     margin: 0 auto;
     max-width: 40rem;
 }
+
+.anone{
+    text-decoration: none;
+    opacity: 1;
+}
