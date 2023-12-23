@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Формы</title>
+    <link rel="stylesheet" href="/CSS/normalize.css" />
+    <link rel="stylesheet" href="/CSS/style.css" />
+    <link rel="stylesheet" href="/CSS/form.css" />
+</head>
+
+<body>
+    <header>
+        <div class="wrapperheader">
+            <nav>
+                <button type="button" class="logo"><img src="./imgs/Logo.svg"></button>
+                <button class="burger" type="button"><img src="./imgs/Menu.svg"></button>
+            </nav>
+            <img src="./css/imgs2/headerback.svg" alt="окантовка" class="headerback">
+        </div>
+    </header>
+    <main>
+        <form method="POST" action="//httpbin.org/post">
+            <fieldset>
+                <legend>Регистрация нового пользователя</legend>
+                <fieldset>
+                    <legend>Личные данные</legend>
+                    <span>Ваш Пол:</span>
+                    <input type="radio" name="sex" id="woman" value="woman" /><label for="woman">
+                        Женский
+                    </label>
+                    <input type="radio" name="sex" id="man" value="man" /><label for="man">
+                        Мужской
+                    </label>
+                    <div class="transparent">
+                        <input required type="text" id="name" placeholder="Имя" />
+                        <label for="name">Ваше Имя</label>
+                    </div>
+                    <div class="transparent">
+                        <input type="date" name="birth" id="birth" />
+                        <label for="birth">Дата рождения</label>
+                    </div>
+                    <div class="transparent">
+                        <input maxlength="50" minlength="8" required type="password" name="password" id="password" />
+                        <label for="password">Введите пароль*(от 8 до 50 символов)</label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Контактные данные</legend>
+                    <div class="transparent">
+                        <input required type="email" name="email" id="email" placeholder="info@example.com" /><label
+                            for="email">Введите ваш email</label>
+                    </div>
+                    <div class="transparent">
+                        <input placeholder="+7 (991) 170-59-00" maxlength="14" minlength="10" type="tel" name="phone"
+                            id="phone" />
+                        <label for="phone">Введите ваш номер телефона</label>
+                    </div>
+                    <div class="transparent">
+                        <select name="datetime" id="daytime">
+                            <option value="1">Утро</option>
+                            <option selected value="4">День</option>
+                            <option value="2">Вечер</option>
+                            <option value="3">Ночь</option>
+                        </select>
+                        <span>Удобный интервал для связи</span>
+                    </div>
+                </fieldset>
+                <div class="transparent drop">
+                    <button class="fir_but" type="reset">Сбросить</button>
+                    <button class="sec_but" type="submit">Отправить</button>
+                </div>
+            </fieldset>
+        </form>
+
+    </main>
+    <footer class="footer1">
+        <div class="footerwrapper">
+            <img src="./imgs/Vector 9.svg" alt="линия" class="footervector">
+            <div class="footerdiv">
+                <p class="opismallw"><a class="opismallw anone" href="./grid.html">2015-2023 г.</a></p>
+                <img src="./imgs/Logofooter.svg" alt="сахарагруп">
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
