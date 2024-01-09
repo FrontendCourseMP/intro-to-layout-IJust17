@@ -6,6 +6,7 @@
     --color-grey-soft: #EFEFEF;
     --color---grey-hard: #777;
     --color----Blue: #1A4D70;
+    --color--Grey-medium: #D8D8D8;
     font-family: Roboto, "sans-serif", Helvetica;
 }
 
@@ -139,7 +140,7 @@ h1 {
 
 .prmailgraphic{
     position: absolute;
-    top: -112px;
+    top: -110px;
     left: -51px;
 
 }
@@ -302,6 +303,7 @@ header{
     background-position-y: -106%;
     background-position-x: 59.8%;
     overflow-x: hidden;
+    position: relative;
 }
 
 .aboutcompany {
@@ -328,6 +330,7 @@ header{
 }
 
 .ourequipmentwrapper{
+    margin-top: 80px;
     padding-top: 48px;
     padding-bottom: 48px;
     max-width: 40rem;
@@ -390,12 +393,14 @@ li {
     background-color: var(--color-grey-soft);
     max-height: 51px;
     margin-bottom: 48px;
-    display: flex;
-    width: 500px;
+    display: block;
+    max-width: 100%;
     gap: 25px;
+    overflow: scroll;
 }
 
 .ourequiph2{
+    margin-top: 80px;
     margin-bottom: 32px;
     width: 342px;
     text-align: center;
@@ -429,7 +434,7 @@ li {
     margin-left: 25px;
     font-family: 'Roboto';
     padding: 16px 18px 16px 18px;
-;
+
 }
 
 .ourequipbutton2 {
@@ -482,8 +487,8 @@ li {
     display: flex;
     flex-direction: column;
     gap: 24px;
-    margin-left:24px;
-    margin-right: 24px;
+    margin-left: 2.4rem;
+    margin-right: 2.4rem;
 }
 .abcsignsmain{
     display: flex;
@@ -846,7 +851,7 @@ li {
     display: flex;
     flex-direction: row;
     padding: 20px 24px 36px 24px;
-    gap: 149px;
+    gap: 140px;
 }
 
 .footervector{
@@ -862,4 +867,668 @@ li {
 .anone{
     text-decoration: none;
     opacity: 1;
+}
+
+.sm-hidden{
+    display: none;
+}
+
+
+
+@media screen and (min-width: 1250px){
+    .div-for-graphic{
+        background-image: url(./imgs2/graphicbig.svg);
+        background-position: bottom;
+        background-repeat: no-repeat;
+        position: absolute;
+        bottom: 0px;
+        content: "";
+        left: 0;
+        right: 0;
+        height: 196px;
+    }
+
+    .wrapper{
+        max-width: 200rem;
+        max-height: 90rem;
+        background: transparent;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .lg-mini-wrapper{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .wrapper22{
+        max-width: 100rem;
+    }
+
+    .lg-hidden{
+        display: none;
+    }
+
+    .href-header-namings{
+        font-family: 'Roboto';
+        background: transparent;
+        border: none;
+        padding: 0;
+        font-size: 1.6rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        color: var(--text-primary);
+        margin-top: 12px;
+        margin-right: 24px;
+        height: 19px;
+        text-decoration: none;
+    }
+
+    .logo{
+        width: 244px;
+        height: 68px;
+        margin-right: 23.8rem;
+        margin-left: 0px;
+    }
+
+    .wrapperheader{
+        max-width: 125rem;
+        margin: 0 auto;
+        background: transparent;
+    }
+
+    .sm-hidden{
+        display:initial;
+    }
+
+    nav{
+        margin-top: 41px;
+        margin-left: 20px;
+        justify-content: initial;
+        background: transparent;
+        position: relative;
+    }
+
+    nav p{
+        margin-top: 12px;
+        margin-right: 24px;
+        height: 19px;
+    }
+
+    header{
+        background: transparent;
+    }
+
+    .headerback-lg{
+        position: absolute;
+        z-index: 1;
+        left: 0;
+        top: -40px;
+        width: 100%;
+        height: 199px;
+    }
+
+    .podzag900o{
+        font-size: 1.6rem;
+        font-style: normal;
+        font-weight: 900;
+        line-height: normal;
+        color: var(--color-orange);
+    }
+
+    .header-oline{
+        position: absolute;
+        left: 482px;
+        top: 38px;
+        width: 90px;
+    }
+
+    .preview {
+        background-image: url("./imgs2/saharapreview.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-x: -100px;
+        background-position-y: -100px;
+        position: relative;
+    }
+
+    .previewzag{
+        background: transparent;
+        margin-top: 0px;
+        margin-bottom: 40px;
+    }
+
+    .lg-maindiv{
+        max-width: 200rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: no-wrap;
+        margin-top: 200px;
+        padding-bottom: 17px;
+        justify-content: center;
+
+    }
+
+    .lg-maindiv2{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: 392px;
+        gap: 250px;
+        overflow: hidden;
+    }
+
+    .previewstation2{
+        width: 592px;
+        height: 392px;
+    }
+
+    .lg-smallguy1{
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        margin-top: 46px;
+    }
+
+    .arrowbutton1{
+        border: none;
+        background: transparent;
+        margin-right: 64px;
+    }
+
+    .arrowbutton2{
+        border: none;
+        background: transparent;
+        margin-left: 85px;
+    }
+
+    .h2main{
+        font-size: 4.8rem;
+        width: 515px;
+        height: 169px;
+    }
+
+    .podzag500w2{
+        font-size: 2.4rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        color: var(--text-secondary);
+        width: 515px;
+        height: 32px;
+    }
+
+    .prmailmain{
+        display: flex;
+        flex-direction: row;
+        gap: 68px;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 77px;
+        margin-left: 120px;
+        margin-top: 101px;
+    }
+
+    .previewmail{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 23px;
+    }
+
+    .centsvg{
+        display: flex;
+        justify-content: center;
+    }
+
+    .abc-lg-div1{
+        display: flex;
+        flex-direction: column;
+        gap: 36px;
+        margin-left: 360px;
+    }
+
+    .abc-lg-div2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+    .bumpabout222{
+        object-fit: cover;
+        height: 526px;
+    }
+
+    .abcsignsmain{
+        display: flex;
+        flex-direction: row;
+        gap: 60px;
+        margin-top: 6px;
+    }
+    
+    .abctext{
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        width: 633px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .aboutcompanysigns{
+        margin-left: 0;
+    }
+
+    .aboutcompanysignstext{
+        margin-left: 0;
+    }
+    
+    .abc-lg-divmain{
+        display: flex;
+        flex-direction: row;
+        padding-top: 80px;
+        padding-bottom: 89px;
+    }
+
+    .ourequipline-lg {
+        background-color: var(--color-grey-soft);
+        max-height: 51px;
+        margin-bottom: 48px;
+        display: flex;
+        width: 1200px;
+        gap: 25px;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+    }
+
+    .ourequiph3{
+        margin-left: 0;
+        font-family: Roboto;
+        font-size: 2.4rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .oeq-lg-div1{
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        padding-top: 49px;
+        padding-bottom: 69px;
+        margin-right: 118px;
+    }
+
+    .ourequiptext{
+        display: flex;
+        flex-direction: column;
+        width: 508px;
+        gap: 24px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    .oeq-lg-divmain{
+        display: flex;
+        flex-direction: row;
+        margin-top: 80px;
+        margin-bottom: 68px;
+        justify-content: center;
+        margin-left: 130px;
+    }
+
+    .oqslidermain3{
+        display: flex;
+        flex-direction: row;
+        gap: 9px;
+        background: transparent;
+        justify-content: center;
+        margin-top: 50px;
+    }
+
+    .oeqbump{
+        width: 414px;
+        height: 322px;
+        margin-left: 72px;
+        margin-right: 72px;
+    }
+
+    .arrowbutton3{
+        padding: 0;
+        border: none;
+        background: transparent;
+        margin: 0;
+    }
+    .arrowbutton4{
+        border: none;
+        background: transparent;
+        padding: 0;
+        margin: 0;
+        overflow: hidden;
+    }
+
+    .ourbenefitswrapper{
+        padding-top: 40px;
+        max-width: 400rem;
+        margin: 0 auto;
+        background: none;
+    }
+
+    .toolkitmain2 {
+        display: flex;
+        flex-direction: row;
+        gap: 24px;
+        justify-content: center;
+    }
+    
+    .toolkitslast2 {
+        width: 384px;
+        height: 445px;
+        padding: 32px;
+        flex-direction: column;
+        border-radius: 8px;
+        background-color: white;
+        margin-bottom: -87px;
+    }
+
+    .h2benefits2{
+        margin-bottom: 32px;
+        text-align: center;
+        padding-top: 100px;
+    }
+
+    .line-toolkits-lg{
+        margin-bottom: 4.8rem;
+    }
+
+    .ourbenefits {
+        background: url(./imgs2/ourbenefitsback.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position-x: 0px;
+        background-position-y: 0px;
+        background-color: none;
+    }
+
+    .customerssection{
+        position: relative;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .customersmini{
+        position: absolute;
+        z-index: -1;
+        top: 0px;
+        left: 0px;
+        margin: 0;
+        width: 100%;
+    }
+
+    .zakazpics{
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0;
+    }
+
+    .zakazpicsmain{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 99px;
+        margin-top: 48px;
+        margin-bottom: 60px;
+    }
+
+    .customersh2-lg{
+        display: block;
+        text-align: center;
+        padding-top: 256px;
+    }
+
+    .customers-line-lg{
+        display: flex;
+        justify-content: center;
+        margin-top: 3.2rem;
+    }
+
+    .stis{
+        margin-top: 35px;
+    }
+
+    .mega{
+        margin-top: 36px;
+    }
+
+    .consultationwrapper{
+        padding-top: 0px;
+        max-width: 100rem;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    .consulth2{
+        width: 1200px;
+        height: auto;
+        padding-top: 100px;
+    }
+    
+    .formdivmain{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+        margin-top: 32px;
+        margin-bottom: 8px;
+    }
+
+    .formplacing {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        margin-left: 0px;
+        gap: 4px;
+    }
+
+    .formrazm {
+        width: 470px;
+        height: 43px;
+        padding: 12px 40px;
+        gap: 10px;
+        border: none;
+        border-radius: 4px;
+    }
+
+    .comm-cons-lg{
+        display: block;
+        width: 470px;
+        margin: 0 auto;
+    }
+
+    .ourequipmentwrapper{
+        margin-top: 80px;
+        padding-top: 48px;
+        padding-bottom: 48px;
+        max-width: 100rem;
+        margin: 0 auto;
+    }
+
+
+    .graphicconsult-lg{
+        position: absolute;
+        bottom: -126px;
+        width: 100%;
+    }
+
+    .sumbit1 {
+        background-color: var(--color-orange);
+        border: none;
+        border-radius: 4px;
+        font-size: 1.6rem;
+        font-style: normal;
+        font-family: 'Roboto';
+        font-weight: 500;
+        line-height: normal;
+        color: #EFEFEF;
+        width: 207px;
+        height: 43px;
+        justify-content: center;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        margin-top: 40px;
+        margin-bottom: 45px;
+    }
+
+    .objectswrapper2{
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        max-width: 50rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .rumap-lg {
+        width: 1182px;
+        height: 610px;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 89px;
+    }
+
+    .h2benefits-lg{
+        margin-top: 16px;
+        margin-bottom: 32px;
+        text-align: center;
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    .contactsback-lg{
+        display: flex;
+        padding: 60px;
+        padding-right: 141px;
+        border-radius: 8px;
+        background: white;
+        justify-content: space-between;
+        align-items: stretch;
+        align-content: stretch;
+        background: white;
+        gap: 40px;
+        margin-top: 46px;
+    }
+
+    .cont-forms-lgmain{
+
+    }
+    
+    .formdivmain22{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        padding-top: 30px;
+    }
+
+    .mini-div-contacts{
+        display: flex;
+        flex-direction: row;
+        gap: 24px;
+    }
+
+    .formrazm22 {
+        width: 100%;
+        padding: 12px 40px;
+        height: 43px;
+        border-radius: 4px;
+        border: 1px solid;
+        border-color: var(--color--Grey-medium);
+    }
+
+    .contacts {
+        background: url(./imgs2/contactsback.jpg);
+        background-size: 1920px 583px;
+        background-repeat: no-repeat;
+        background-position-x: 50.5%;
+        background-color: var(--color----Blue);
+        position: relative;
+        z-index: 3;
+        padding-top: 80px;
+    }
+
+    .big-lg-contacts{
+        width: 100%;
+        max-width: 1248px;
+        margin: 0 auto;
+        padding: 0 24px;
+        position: relative;
+        z-index: 3;
+    }
+
+    .blockm{
+        color: var(--text-primary)
+    }
+
+    .formdownp{
+        color: var(--text-primary);
+        margin-left: 0px;
+    }
+
+    .commentinput22{
+        display: block;
+        width: 100%;
+        height: 130px;
+        border: 1px solid;
+        border-color: var(--color--Grey-medium);
+        border-radius: 8px;
+    }
+
+    .commentlabel{
+        margin-left: 0px;
+        margin-bottom: 4px;
+        margin-top: 24px;
+    }
+
+    .formplacing2{
+        margin-left: 0px;
+        width: 100%;
+    }
+
+    .orangebox{
+        flex: 1 0 auto;
+    }
+
+    .greybox{
+        flex: 1 0 auto;
+    }
+
+    .sumbitdown{
+        margin-left: 0;
+        margin-bottom: 0;
+    }
+
+    .formdivmain22 .podzag900b{
+        font-family: Roboto;
+        font-size: 2rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .footerdiv{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 1248px;
+        margin: 0 auto;
+        padding-top: 32px;
+        gap: 0;
+    }
 }
