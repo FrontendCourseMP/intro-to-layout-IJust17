@@ -2,341 +2,268 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Формы</title>
-    <link rel="stylesheet" href="/CSS/normalize.css" />
-    <link rel="stylesheet" href="/CSS/style.css" />
-    <link rel="stylesheet" href="/CSS/form.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Формы</title>
+  <link rel="stylesheet" href="/CSS/normalize.css" />
+  <link rel="stylesheet" href="/CSS/style.css" />
+  <link rel="stylesheet" href="/CSS/form.css" />
 </head>
 
 <body>
-    <header>
-        <div class="wrapperheader">
-            <nav>
-                <button type="button" class="logo"><a href="./form.html"><img src="./imgs/Logo.svg"></a></button>
-                <a href="#" class="podzag500 sm-hidden href-header-namings">О компании</a>
-                <a href="#" class="podzag500 sm-hidden href-header-namings">Наши преимущества</a>
-                <a href="#" class="podzag500 sm-hidden href-header-namings">Заказчики</a>
-                <a href="#" class="podzag500 sm-hidden href-header-namings">Объекты</a>
-                <a href="#" class="podzag500 sm-hidden href-header-namings">Контакты</a>
-                <a href="#" class="podzag900o sm-hidden href-header-namings">8 800 600-15-05</a>
-                <button class="burger lg-hidden" type="button"><img src="./imgs/Menu.svg"></button>
-                <img src="./imgs/Line.svg" class="header-oline sm-hidden">
-            </nav>
-            <img src="./css/imgs2/headerback.svg" alt="окантовка" class="headerback lg-hidden">
-            <img src="./css/imgs2/headerbacklg.svg" alt="узоры шапки" class="sm-hidden headerback-lg">
+  <header>
+    <div class="wrapperheader">
+      <nav>
+        <button type="button" class="logo"><a href="./form.html"><img src="./imgs/Logo.svg"></a></button>
+        <a href="#" class="podzag500 sm-hidden href-header-namings">О компании</a>
+        <a href="#" class="podzag500 sm-hidden href-header-namings">Наши преимущества</a>
+        <a href="#" class="podzag500 sm-hidden href-header-namings">Заказчики</a>
+        <a href="#" class="podzag500 sm-hidden href-header-namings">Объекты</a>
+        <a href="#" class="podzag500 sm-hidden href-header-namings">Контакты</a>
+        <a href="#" class="podzag900o sm-hidden href-header-namings">8 800 600-15-05</a>
+        <button class="burger lg-hidden" type="button"><img src="./imgs/Menu.svg"></button>
+        <img src="./imgs/Line.svg" class="header-oline sm-hidden">
+      </nav>
+      <img src="./css/imgs2/headerback.svg" alt="окантовка" class="headerback lg-hidden">
+      <img src="./css/imgs2/headerbacklg.svg" alt="узоры шапки" class="sm-hidden headerback-lg">
+    </div>
+  </header>
+  <main>
+    <p>Зарегистрируйтесь</p>
+    <form method="POST" action="//httpbin.org/post">
+      <fieldset>
+        <legend>Личные данные</legend>
+        <span>Ваш Пол:</span>
+        <input type="radio" name="sex" id="woman" value="woman" /><label for="woman">
+          Женский
+        </label>
+        <input type="radio" name="sex" id="man" value="man" /><label for="man">
+          Мужской
+        </label>
+        <div >
+          <input required type="text" id="name" placeholder="Имя" />
+          <label for="name">Ваше Имя</label>
         </div>
-    </header>
-    <main>
-        <form method="POST" action="//httpbin.org/post">
-            <fieldset>
-                <legend>Регистрация нового пользователя</legend>
-                <fieldset>
-                    <legend>Личные данные</legend>
-                    <span>Ваш Пол:</span>
-                    <input type="radio" name="sex" id="woman" value="woman" /><label for="woman">
-                        Женский
-                    </label>
-                    <input type="radio" name="sex" id="man" value="man" /><label for="man">
-                        Мужской
-                    </label>
-                    <div class="transparent">
-                        <input required type="text" id="name" placeholder="Имя" />
-                        <label for="name">Ваше Имя</label>
-                    </div>
-                    <div class="transparent">
-                        <input type="date" name="birth" id="birth" />
-                        <label for="birth">Дата рождения</label>
-                    </div>
-                    <div class="transparent">
-                        <input maxlength="50" minlength="8" required type="password" name="password" id="password" />
-                        <label for="password">Введите пароль*(от 8 до 50 символов)</label>
-                    </div>
-                </fieldset>
-                <fieldset>
-                    <legend>Контактные данные</legend>
-                    <div class="transparent">
-                        <input required type="email" name="email" id="email" placeholder="info@example.com" /><label
-                            for="email">Введите ваш email</label>
-                    </div>
-                    <div class="transparent">
-                        <input placeholder="+7 (991) 170-59-00" maxlength="14" minlength="10" type="tel" name="phone"
-                            id="phone" />
-                        <label for="phone">Введите ваш номер телефона</label>
-                    </div>
-                    <div class="transparent">
-                        <select name="datetime" id="daytime">
-                            <option value="1">Утро</option>
-                            <option selected value="4">День</option>
-                            <option value="2">Вечер</option>
-                            <option value="3">Ночь</option>
-                        </select>
-                        <span>Удобный интервал для связи</span>
-                    </div>
-                </fieldset>
-                <div class="transparent drop">
-                    <button class="fir_but" type="reset">Сбросить</button>
-                    <button class="sec_but" type="submit">Отправить</button>
-                </div>
-            </fieldset>
-        </form>
-        <form class="palce" action="//httpbin.org/post">
-            <dl>
-              <dt>Pseudoelement</dt>
-              <dd>
-                Is a keyword added to a selector that lets you style a specific part
-                of the selected element(s).
-              </dd>
-              <dt>Pseudoclass</dt>
-              <dd>
-                Is a selector that selects elements that are in a specific state,
-                e.g. they are the first element of their type, or they are being
-                hovered over by the mouse pointer.
-              </dd>
-            </dl>
-            <ul>
-              <li>
-                <input checked id="9801" type="checkbox" /><label for="9801">
-                  :active
-                </label>
-              </li>
-              <li>
-                <input id="9802" type="checkbox" /><label for="9802">:any</label>
-              </li>
-              <li>
-                <input id="9803" type="checkbox" /><label for="9803"
-                  >:any-link</label
-                >
-              </li>
-              <li>
-                <input id="9804" type="checkbox" /><label for="9804"
-                  >:checked</label
-                >
-              </li>
-              <li>
-                <input id="9805" type="checkbox" /><label for="9805"
-                  >:default</label
-                >
-              </li>
-              <li>
-                <input id="9806" type="checkbox" /><label for="9806"
-                  >:defined</label
-                >
-              </li>
-              <li>
-                <input id="9807" type="checkbox" /><label for="9807">:dir()</label>
-              </li>
-              <li>
-                <input id="9808" type="checkbox" /><label for="9808"
-                  >:disabled</label
-                >
-              </li>
-              <li>
-                <input id="9809" type="checkbox" /><label for="9809">:empty</label>
-              </li>
-              <li>
-                <input id="98010" type="checkbox" /><label for="98010"
-                  >:enabled</label
-                >
-              </li>
-              <li>
-                <input id="98011" type="checkbox" /><label for="98011"
-                  >:first</label
-                >
-              </li>
-              <li>
-                <input id="98012" type="checkbox" /><label for="98012"
-                  >:first-child</label
-                >
-              </li>
-              <li>
-                <input id="98013" type="checkbox" /><label for="98013"
-                  >:first-of-type</label
-                >
-              </li>
-              <li>
-                <input id="98014" type="checkbox" /><label for="98014"
-                  >:fullscreen</label
-                >
-              </li>
-              <li>
-                <input id="98015" type="checkbox" /><label for="98015"
-                  >:focus</label
-                >
-              </li>
-              <li>
-                <input id="98016" type="checkbox" /><label for="98016"
-                  >:hover</label
-                >
-              </li>
-              <li>
-                <input id="98017" type="checkbox" /><label for="98017"
-                  >:indeterminate</label
-                >
-              </li>
-              <li>
-                <input id="98018" type="checkbox" /><label for="98018"
-                  >:in-range</label
-                >
-              </li>
-              <li>
-                <input id="98019" type="checkbox" /><label for="98019"
-                  >:Invalid</label
-                >
-              </li>
-              <li>
-                <input id="98020" type="checkbox" /><label for="98020"
-                  >:lang()</label
-                >
-              </li>
-              <li>
-                <input id="98021" type="checkbox" /><label for="98021"
-                  >:last-child</label
-                >
-              </li>
-              <li>
-                <input id="98022" type="checkbox" /><label for="98022"
-                  >:last-of-type</label
-                >
-              </li>
-              <li>
-                <input id="98023" type="checkbox" /><label for="98023">:left</label>
-              </li>
-              <li>
-                <input id="98024" type="checkbox" /><label for="98024">:link</label>
-              </li>
-              <li>
-                <input id="98025" type="checkbox" /><label for="98025"
-                  >:not()</label
-                >
-              </li>
-              <li>
-                <input id="98026" type="checkbox" /><label for="98026"
-                  >:nth-child</label
-                >
-              </li>
-              <li>
-                <input id="a1" type="checkbox" /><label for="a1"
-                  >:nth-last-child</label
-                >
-              </li>
-              <li>
-                <input id="a2" type="checkbox" /><label for="a2"
-                  >:nth-last-of-type()</label
-                >
-              </li>
-              <li>
-                <input checked id="a3" type="checkbox" /><label for="a3"
-                  >:nth-of-type()</label
-                >
-              </li>
-              <li>
-                <input id="a4" type="checkbox" /><label for="a4">:only-child</label>
-              </li>
-              <li>
-                <input id="a5" type="checkbox" /><label for="a5"
-                  >:only-of-type</label
-                >
-              </li>
-              <li>
-                <input id="a6" type="checkbox" /><label for="a6">:optional</label>
-              </li>
-              <li>
-                <input id="a7" type="checkbox" /><label for="a7"
-                  >:out-of-range</label
-                >
-              </li>
-              <li>
-                <input id="a8" type="checkbox" /><label for="a8">:read-only</label>
-              </li>
-              <li>
-                <input id="a9" type="checkbox" /><label for="a9">:read-write</label>
-              </li>
-              <li>
-                <input checked id="a10" type="checkbox" /><label for="a10"
-                  >:required</label
-                >
-              </li>
-              <li>
-                <input id="a11" type="checkbox" /><label for="a11">:right</label>
-              </li>
-              <li>
-                <input checked id="a12" type="checkbox" /><label for="a12"
-                  >:root</label
-                >
-              </li>
-              <li>
-                <input id="a13" type="checkbox" /><label for="a13">:scope</label>
-              </li>
-              <li>
-                <input id="a14" type="checkbox" /><label for="a14">:target</label>
-              </li>
-              <li>
-                <input id="a15" type="checkbox" /><label for="a15">:valid</label>
-              </li>
-              <li>
-                <input checked id="a16" type="checkbox" /><label for="a16"
-                  >:visited</label
-                >
-              </li>
-            </ul>
-            <ul>
-              <li>
-                <input checked id="b1" type="checkbox" /><label for="b1"
-                  >::after</label
-                >
-              </li>
-              <li>
-                <input checked id="b2" type="checkbox" /><label for="b2"
-                  >::before</label
-                >
-              </li>
-              <li>
-                <input checked id="b3" type="checkbox" /><label for="b3"
-                  >::first-letter</label
-                >
-              </li>
-              <li>
-                <input id="b4" type="checkbox" /><label for="b4"
-                  >::first-line</label
-                >
-              </li>
-              <li>
-                <input id="b5" type="checkbox" /><label for="b5"
-                  >::gphoto_adsmar-error</label
-                >
-              </li>
-              <li>
-                <input id="b6" type="checkbox" /><label for="b6">::marker</label>
-              </li>
-              <li>
-                <input checked id="b7" type="checkbox" /><label for="b7"
-                  >::selection</label
-                >
-              </li>
-              <li>
-                <input id="b8" type="checkbox" /><label for="b8"
-                  >::spelling-error</label
-                >
-              </li>
-            </ul>
-          </form>
-    </main>
-    <footer class="footer1">
-        <div class="footerwrapper lg-hidden">
-            <img src="./imgs/Vector 9.svg" alt="линия" class="footervector">
-            <div class="footerdiv">
-                <p class="opismallw"><a class="opismallw anone" href="./grid.html">2015 — 2023 г.</a></p>
-                <img src="./imgs/Logofooter.svg" alt="сахарагруп" class="footy_wall">
-            </div>
+        <div >
+          <input type="date" name="birth" id="birth" />
+          <label for="birth">Дата рождения</label>
         </div>
-        <!-------------------------------------------------ФУТЕР ВЕРСИЯ ДЛЯ ПК----------------------------------------------------------------------------------------------------------------------------------------------->
-        <div class="footerdiv sm-hidden">
-            <p class="opismallw"><a class="opismallw anone" href="./grid.html">2015 — 2023 г.</a></p>
-            <img src="./css/imgs2/saharafooter-lg.svg" alt="сахарагруп" class="footy_wall">
+        <div >
+          <input maxlength="50" minlength="8" required type="password" name="password" id="password" />
+          <label for="password">Введите пароль*(от 8 до 50 символов)</label>
         </div>
-    </footer>
+      </fieldset>
+      <fieldset>
+        <legend>Контактные данные</legend>
+        <div >
+          <input required type="email" name="email" id="email" placeholder="mail@random.com" /><label
+            for="email">Введите вашу почту</label>
+        </div>
+        <div >
+          <input placeholder="+7 (952) 053-43-99" maxlength="14" minlength="10" type="tel" name="phone" id="phone" />
+          <label for="phone">Введите ваш телефон</label>
+        </div>
+        <div >
+          <select name="datetime" id="daytime">
+            <option value="1">Утро</option>
+            <option selected value="4">День</option>
+            <option value="2">Вечер</option>
+            <option value="3">Ночь</option>
+          </select>
+          <span>Удобное время для связи</span>
+        </div>
+      </fieldset>
+      <div class="transparent dbutton">
+        <button class="first_button" type="reset">Сбросить</button>
+        <button class="second_button" type="submit">Отправить</button>
+      </div>
+    </form>
+    <form class="plc">
+      <dl>
+        <dt>Pseudoelement</dt>
+        <dd>
+          Is a keyword added to a selector that lets you style a specific part
+          of the selected element(s).
+        </dd>
+        <dt>Pseudoclass</dt>
+        <dd>
+          Is a selector that selects elements that are in a specific state,
+          e.g. they are the first element of their type, or they are being
+          hovered over by the mouse pointer.
+        </dd>
+      </dl>
+      <ul>
+        <li>
+          <input checked id="9801" type="checkbox" /><label for="9801">
+            :active
+          </label>
+        </li>
+        <li>
+          <input id="9802" type="checkbox" /><label for="9802">:any</label>
+        </li>
+        <li>
+          <input id="9803" type="checkbox" /><label for="9803">:any-link</label>
+        </li>
+        <li>
+          <input id="9804" type="checkbox" /><label for="9804">:checked</label>
+        </li>
+        <li>
+          <input id="9805" type="checkbox" /><label for="9805">:default</label>
+        </li>
+        <li>
+          <input id="9806" type="checkbox" /><label for="9806">:defined</label>
+        </li>
+        <li>
+          <input id="9807" type="checkbox" /><label for="9807">:dir()</label>
+        </li>
+        <li>
+          <input id="9808" type="checkbox" /><label for="9808">:disabled</label>
+        </li>
+        <li>
+          <input id="9809" type="checkbox" /><label for="9809">:enabled</label>
+        </li>
+        <li>
+          <input id="98010" type="checkbox" /><label for="98010">:empty</label>
+        </li>
+        <li>
+          <input id="98011" type="checkbox" /><label for="98011">:first</label>
+        </li>
+        <li>
+          <input id="98012" type="checkbox" /><label for="98012">:first-child</label>
+        </li>
+        <li>
+          <input id="98013" type="checkbox" /><label for="98013">:first-of-type</label>
+        </li>
+        <li>
+          <input id="98014" type="checkbox" /><label for="98014">:fullscreen</label>
+        </li>
+        <li>
+          <input id="98015" type="checkbox" /><label for="98015">:focus</label>
+        </li>
+        <li>
+          <input id="98016" type="checkbox" /><label for="98016">:hover</label>
+        </li>
+        <li>
+          <input id="98017" type="checkbox" /><label for="98017">:indeterminate</label>
+        </li>
+        <li>
+          <input id="98018" type="checkbox" /><label for="98018">:in-range</label>
+        </li>
+        <li>
+          <input id="98019" type="checkbox" /><label for="98019">:Invalid</label>
+        </li>
+        <li>
+          <input id="98020" type="checkbox" /><label for="98020">:lang()</label>
+        </li>
+        <li>
+          <input id="98021" type="checkbox" /><label for="98021">:last-child</label>
+        </li>
+        <li>
+          <input id="98022" type="checkbox" /><label for="98022">:last-of-type</label>
+        </li>
+        <li>
+          <input id="98023" type="checkbox" /><label for="98023">:left</label>
+        </li>
+        <li>
+          <input id="98024" type="checkbox" /><label for="98024">:link</label>
+        </li>
+        <li>
+          <input id="98025" type="checkbox" /><label for="98025">:not()</label>
+        </li>
+        <li>
+          <input id="98026" type="checkbox" /><label for="98026">:nth-child</label>
+        </li>
+        <li>
+          <input id="a1" type="checkbox" /><label for="a1">:nth-last-child</label>
+        </li>
+        <li>
+          <input id="a2" type="checkbox" /><label for="a2">:nth-of-type()</label>
+        </li>
+        <li>
+          <input checked id="a3" type="checkbox" /><label for="a3">:nth-last-of-type()</label>
+        </li>
+        <li>
+          <input id="a4" type="checkbox" /><label for="a4">:only-child</label>
+        </li>
+        <li>
+          <input id="a5" type="checkbox" /><label for="a5">:only-of-type</label>
+        </li>
+        <li>
+          <input id="a6" type="checkbox" /><label for="a6">:optional</label>
+        </li>
+        <li>
+          <input id="a7" type="checkbox" /><label for="a7">:out-of-range</label>
+        </li>
+        <li>
+          <input id="a8" type="checkbox" /><label for="a8">read-write</label>
+        </li>
+        <li>
+          <input id="a9" type="checkbox" /><label for="a9">:read-only</label>
+        </li>
+        <li>
+          <input checked id="a10" type="checkbox" /><label for="a10">:root</label>
+        </li>
+        <li>
+          <input id="a11" type="checkbox" /><label for="a11">:right</label>
+        </li>
+        <li>
+          <input checked id="a12" type="checkbox" /><label for="a12">:required</label>
+        </li>
+        <li>
+          <input id="a13" type="checkbox" /><label for="a13">:target</label>
+        </li>
+        <li>
+          <input id="a14" type="checkbox" /><label for="a14">:scope</label>
+        </li>
+        <li>
+          <input id="a15" type="checkbox" /><label for="a15">:valid</label>
+        </li>
+        <li>
+          <input checked id="a16" type="checkbox" /><label for="a16">:visited</label>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <input checked id="b1" type="checkbox" /><label for="b1">::after</label>
+        </li>
+        <li>
+          <input checked id="b2" type="checkbox" /><label for="b2">::before</label>
+        </li>
+        <li>
+          <input checked id="b3" type="checkbox" /><label for="b3">::first-letter</label>
+        </li>
+        <li>
+          <input id="b4" type="checkbox" /><label for="b4">::first-line</label>
+        </li>
+        <li>
+          <input id="b5" type="checkbox" /><label for="b5">::gris_adsmar-error</label>
+        </li>
+        <li>
+          <input id="b6" type="checkbox" /><label for="b6">::marker</label>
+        </li>
+        <li>
+          <input checked id="b7" type="checkbox" /><label for="b7">::selection</label>
+        </li>
+        <li>
+          <input id="b8" type="checkbox" /><label for="b8">::spelling-error</label>
+        </li>
+      </ul>
+    </form>
+  </main>
+  <footer class="footer1">
+    <div class="footerwrapper lg-hidden">
+      <img src="./imgs/Vector 9.svg" alt="линия" class="footervector">
+      <div class="footerdiv">
+        <p class="opismallw"><a class="opismallw anone" href="./grid.html">2015 — 2023 г.</a></p>
+        <img src="./imgs/Logofooter.svg" alt="сахарагруп" class="footer_stl">
+      </div>
+    </div>
+    <!-------------------------------------------------ФУТЕР ВЕРСИЯ ДЛЯ ПК----------------------------------------------------------------------------------------------------------------------------------------------->
+    <div class="footerdiv sm-hidden">
+      <p class="opismallw"><a class="opismallw anone" href="./grid.html">2015 — 2023 г.</a></p>
+      <img src="./css/imgs2/saharafooter-lg.svg" alt="сахарагруп" class="footer_stl">
+    </div>
+  </footer>
 </body>
 
 </html>

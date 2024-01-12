@@ -16,35 +16,36 @@ nav{
     top: 5px;
 }
 
-.drop {
+.dbutton {
     display: flex;
     justify-content: space-between;
     margin-top: 1rem;
 }
 
-.fir_but {
+.first_button {
     padding: 2rem;
     width: 49%;
-    height: unset;
     margin: 0;
     background: #1A4D70;
     color: #fff;
+    height: unset;
 }
 
-.sec_but {
+.second_button {
     padding: 2rem;
     width: 49%;
-    height: unset;
     margin: 0;
     background: #F9572B;
     color: #fff;
+    height: unset;
 }
 
-.palce {
-    height: unset;
-    margin: 10rem 30rem;
+.plc {
     text-align: center;
     font-size: 2.6rem;
+    height: unset;
+    margin: 10rem 30rem;
+    color:#1A4D70;
 }
 
 main {
@@ -53,11 +54,38 @@ main {
 
 main fieldset,
 main form button {
-    border-radius: 12px;
+    border-radius: none;
+    border-color:#1A4D70;
 }
 
 main form * {
     margin: 3px 6px;
+}
+
+main form:last-of-type ul {
+    max-width: 50rem;
+    margin: 100px auto;
+    display: flex;
+    flex-basis: fill;
+    flex-wrap: wrap;
+}
+
+main form:last-of-type li {
+    display: flex;
+    justify-content: space-between;
+}
+
+li {
+    width: 100%;
+}
+
+main form:last-of-type li:nth-of-type(even) {
+    color:#1A4D70;
+}
+
+main form:last-of-type li:nth-of-type(odd) {
+    color: #D8D8D8;
+    background-color: grey;
 }
 
 input:not([type="radio"]),
@@ -67,6 +95,10 @@ select {
 
 input:focus+label {
     transition: transform 300ms;
+}
+
+legend{
+    text-align: center;
 }
 
 input:focus+label {
@@ -83,10 +115,20 @@ input[required]+label {
     color: red;
 }
 
+input{
+    border-radius: 4px;
+    border: 2px solid;
+    border-color:#1A4D70;
+}
+
+legend{
+    color: #1A4D70;
+}
+
 dt::first-letter {
-    font-size: 3rem;
-    color: red;
-    font-weight: 700;
+    font-size: 4rem;
+    color:#F9572B;
+    font-weight: 600;
 }
 
 dd::after {
@@ -100,32 +142,7 @@ form {
     font-weight: 500;
 }
 
-main form:last-of-type ul {
-    display: flex;
-    flex-basis: fill;
-    flex-wrap: wrap;
-    max-width: 50rem;
-    margin: 100px auto;
-}
-
-main form:last-of-type li {
-    display: flex;
-    justify-content: space-between;
-}
-
-li {
-    width: 100%;
-}
-
-main form:last-of-type li:nth-of-type(even) {
-    color: #1A4D70;
-}
-
-main form:last-of-type li:nth-of-type(odd) {
-    color: #D8D8D8;
-}
-
-.footy_wall:hover {
+.footer_stl:hover {
     transform: rotate(30deg) scale(1.5) skew(20deg);
     transition: transform 300ms;
 }

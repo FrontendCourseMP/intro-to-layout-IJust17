@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="./css/reseter.css" />
   <link rel="stylesheet" href="./css/style.css" />
-  <link rel="stylesheet" href="./css/greed.css" />
+  <link rel="stylesheet" href="./css/grid.css" />
   <title>Grid</title>
   <script type="text/javascript"
     src="/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=XtdZaFWxppX-3ThprcICPlS5PIUKfNaeEyJD6OolnQ5XlSTnCpoh7iT3qQVxC_oXgND3X27Ddkqc_xbmNGjB4GplA6C88fF_KGonui5L95PMyKCD4W7prUBmGnYdmBHNsPfx2ZUZps8K-z7BpduU0fBjAI7kW2rGvBAlbJ6wNTWgdvvCkIfotABDWlHiDV8tFprLZVoGBFFqcmyOzkFYiWibRhTw6ioKhr9AtUqWC6EkchdPsfq0UvBWezWFP9TAEuP4if8tfpN1eQLk0QxUlA"
@@ -18,29 +18,37 @@
 <body>
   <header>
     <div class="wrapperheader">
-      <nav>
-        <button type="button" class="logo"><img src="./imgs/Logo.svg"></button>
-        <button class="burger" type="button"><img src="./imgs/Menu.svg"></button>
-      </nav>
-      <img src="./css/imgs2/headerback.svg" alt="окантовка" class="headerback">
+        <nav>
+            <button type="button" class="logo"><a href="./form.html"><img src="./imgs/Logo.svg"></a></button>
+            <a href="#" class="podzag500 sm-hidden href-header-namings">О компании</a>
+            <a href="#" class="podzag500 sm-hidden href-header-namings">Наши преимущества</a>
+            <a href="#" class="podzag500 sm-hidden href-header-namings">Заказчики</a>
+            <a href="#" class="podzag500 sm-hidden href-header-namings">Объекты</a>
+            <a href="#" class="podzag500 sm-hidden href-header-namings">Контакты</a>
+            <a href="#" class="podzag900o sm-hidden href-header-namings">8 800 600-15-05</a>
+            <button class="burger lg-hidden" type="button"><img src="./imgs/Menu.svg"></button>
+            <img src="./imgs/Line.svg" class="header-oline sm-hidden">
+        </nav>
+        <img src="./css/imgs2/headerback.svg" alt="окантовка" class="headerback lg-hidden">
+        <img src="./css/imgs2/headerbacklg.svg" alt="узоры шапки" class="sm-hidden headerback-lg">
     </div>
-  </header>
+</header>
   <main>
-    <section class="main_painting">
-      <div class="painting">
-        <div class="blockmm s1"></div>
-        <div class="blockmm s2"></div>
-        <div class="blockmm s3"></div>
-        <div class="blockmm s4"></div>
-        <div class="blockmm s5"></div>
-        <div class="blockmm s6"></div>
-        <div class="blockmm s7"></div>
-        <div class="blockmm s8"></div>
-        <div class="blockmm s9"></div>
+    <section class="main_mozaika">
+      <div class="mozaika">
+        <div class="blockmm g1"></div>
+        <div class="blockmm g2"></div>
+        <div class="blockmm g3"></div>
+        <div class="blockmm g4"></div>
+        <div class="blockmm g5"></div>
+        <div class="blockmm g6"></div>
+        <div class="blockmm g7"></div>
+        <div class="blockmm g8"></div>
+        <div class="blockmm g9"></div>
       </div>
     </section>
     <section class="grids">
-      <div class="sidebar">
+      <div class="fronttablet">
         <a href="">ссылка 1</a>
         <a href="">ссылка 2</a>
         <a href="">ссылка 3</a>
@@ -135,7 +143,7 @@
         </g>
       </svg>
     </section>
-    <section class="photo_ads">
+    <section class="ris_ads">
       <div>
         <img src="./imgs/bumpabout.jpg" alt="AAr" />
         <a href="">ссылка</a>
@@ -163,14 +171,19 @@
     </section>
   </main>
   <footer class="footer1">
-    <div class="footerwrapper">
-      <img src="./imgs/Vector 9.svg" alt="линия" class="footervector">
-      <div class="footerdiv">
-        <p class="opismallw">2015-2023 г.</p>
-        <img src="./imgs/Logofooter.svg" alt="сахарагруп">
-      </div>
+    <div class="footerwrapper lg-hidden">
+        <img src="./imgs/Vector 9.svg" alt="линия" class="footervector">
+        <div class="footerdiv">
+            <p class="opismallw"><a class="opismallw anone" href="./grid.html">2015 — 2023 г.</a></p>
+            <img src="./imgs/Logofooter.svg" alt="Логотип Сахара Груп">
+        </div>
     </div>
-  </footer>
+    <!-------------------------------------------------ФУТЕР ВЕРСИЯ ДЛЯ ПК----------------------------------------------------------------------------------------------------------------------------------------------->
+    <div class="footerdiv sm-hidden">
+        <p class="opismallw"><a class="opismallw anone" href="./grid.html">2015 — 2023 г.</a></p>
+        <img src="./css/imgs2/saharafooter-lg.svg" alt="Логотип Сахара Груп">
+    </div>
+</footer>
 </body>
 
 </html>

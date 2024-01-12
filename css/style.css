@@ -81,6 +81,33 @@ h1 {
 *:focus{
     outline: var(--color-orange) solid 2px;
 }
+
+.skip-link {
+    display: block;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    left: 32%;
+    padding: 15px 30px;
+    border-radius: 8px;
+    border: var(--color----Blue) 2px solid;
+    color: var(--text-secondary);
+    background: var(--color-orange);
+    transform: translateY(-210%);
+    font-family: Roboto;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    font-weight: 700;
+    text-decoration: none;
+    outline: none;
+
+}
+
+.skip-link:focus {
+    transform: translateY(0%);
+    font-family: 'Roboto';
+}
+
 .sr-only {
     position: absolute;
     width: 1px;
@@ -275,6 +302,7 @@ header {
     position: absolute;
     top: -20px;
     z-index: 1;
+    max-width: 100%;
 }
 
 .wrapperheader {
@@ -467,8 +495,11 @@ li {
 }
 
 .mrgleft24 {
-    margin-left: 24px;
+    padding-left: 24px;
     margin-bottom: 40px;
+    width: 100%;
+    overflow: hidden;
+    resize: both;
 }
 
 .oqslidermain {
@@ -536,8 +567,6 @@ li {
 }
 
 .h2benefits {
-    width: 342px;
-    height: 82px;
     margin-bottom: 32px;
     text-align: center;
     margin-left: 25px;
@@ -571,6 +600,7 @@ li {
     position: absolute;
     z-index: -1;
     top: 58.5px;
+    width: 100%;
 }
 
 .consultationwrapper {
@@ -901,7 +931,7 @@ li {
 
 
 
-@media screen and (min-width: 1250px) {
+@media screen and (min-width: 1200px) {
     .div-for-graphic {
         background-image: url(./imgs2/graphicbig.svg);
         background-position: bottom;
@@ -1575,5 +1605,86 @@ li {
         text-align: center;
         margin-bottom: 3.2rem;
         margin-top: 0px;
+    }
+}
+
+@media screen and (max-width: 391px){
+    form{
+        width: 100%;
+    }
+
+    input{
+        width: 95%;
+    }
+
+    .formrazm{
+        width: 95%;
+    }
+
+    .commentinput{
+        width: 85%;
+    }
+
+    .orangebox{
+        width: 90%;
+    }
+
+    .greybox{
+        width: 90%;
+    }
+
+    .rumapdiv{
+        width: 80%;
+        max-width: 80%;
+    }
+
+    .rumap{
+        width: 90%;
+        max-width: 90%;
+    }
+
+    .graphicconsult{
+        width: 100%;
+    }
+
+    .consulth2{
+        width: 100%;
+    }
+
+    .ourequiph2{
+        width: 100%;
+    }
+
+    .prmailgraphic{
+        max-width: 130%;
+        position: absolute;
+        top: -60px;
+        left: -51px;
+    }
+
+    .h2main{
+        width: 100%;
+    }
+
+    p podzag500w:first-of-type{
+        width: 100%;
+    }
+
+    .previewzag{
+        width: 100%;
+    }
+
+    nav{
+        max-width: 100%;
+    }
+
+    .previewstation{
+        max-width: 90%;
+    }
+    
+    .footervector{
+        width: 100%;
+        margin-left: 0px;
+        margin-right: 0px;
     }
 }

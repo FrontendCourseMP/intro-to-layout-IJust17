@@ -10,26 +10,31 @@
 </head>
 
 <body>
+    <a class="skip-link" href="#main">
+        Перейти к контенту
+      </a>
     <header>
         <div class="wrapperheader">
             <nav>
-                <button type="button" class="logo"><a href="./form.html"><img src="./imgs/Logo.svg" alt="логотип"><span
-                            class="sr-only">на главную</span></a></button>
-                <a href="#" class="podzag500 sm-hidden href-header-namings">О компании</a>
-                <a href="#" class="podzag500 sm-hidden href-header-namings">Наши преимущества</a>
-                <a href="#" class="podzag500 sm-hidden href-header-namings">Заказчики</a>
-                <a href="#" class="podzag500 sm-hidden href-header-namings">Объекты</a>
-                <a href="#" class="podzag500 sm-hidden href-header-namings">Контакты</a>
-                <a href="#" class="podzag900o sm-hidden href-header-namings">8 800 600-15-05</a>
-                <button class="burger lg-hidden" type="button"><a href="./demo.html"><img src="./imgs/Menu.svg" alt="меню"><span
-                        class="sr-only">открыть меню</span></a></button>
+                <button type="button" class="logo lg-hidden"><a href="./form.html" class="lg-hidden"><img src="./imgs/Logo.svg" alt="логотип" class="lg-hidden"><span
+                            class="sr-only lg-hidden">на главную</span></a></button>
+                <button type="button" class="logo sm-hidden"><a href="./form.html"><img src="./css/imgs2/Logo_lg.svg" alt="логотип" class="sm-hidden"><span
+                            class="sr-only sm-hidden">на главную</span></a></button>
+                <a href="#aboutcompany" class="podzag500 sm-hidden href-header-namings">О компании</a>
+                <a href="#ourbenefits" class="podzag500 sm-hidden href-header-namings">Наши преимущества</a>
+                <a href="#customerssection" class="podzag500 sm-hidden href-header-namings">Заказчики</a>
+                <a href="#objects" class="podzag500 sm-hidden href-header-namings">Объекты</a>
+                <a href="#contacts" class="podzag500 sm-hidden href-header-namings">Контакты</a>
+                <a href="#consultation" class="podzag900o sm-hidden href-header-namings">8 800 600-15-05</a>
+                <button class="burger lg-hidden" type="button"><a href="./demo.html"><img src="./imgs/Menu.svg"
+                            alt="меню"><span class="sr-only">открыть меню</span></a></button>
                 <img src="./imgs/Line.svg" class="header-oline sm-hidden" alt="декоративная линия">
             </nav>
             <img src="./css/imgs2/headerback.svg" alt="узоры" class="headerback lg-hidden">
             <img src="./css/imgs2/headerbacklg.svg" alt="узоры" class="sm-hidden headerback-lg">
         </div>
     </header>
-    <main>
+    <main id="main">
         <h1>Аренда насосных спецстанций Сахара</h1>
         <section class="preview">
             <div class="wrapper lg-hidden">
@@ -150,7 +155,7 @@
             </div>
         </section>
         <!--------------------------------------------------------------------------РАЗДЕЛ О КОМПАНИИ------------------------------------------------------------------------------------------------------------------->
-        <section class="aboutcompany">
+        <section class="aboutcompany" id="aboutcompany">
             <div class="aboutcompanywrapper lg-hidden">
                 <h2 class="h2b centertext">О компании</h2>
                 <div><img src="./imgs/Line.svg" class="orangeline orangeline2" alt="оранжевая линия"></div>
@@ -312,14 +317,14 @@
             </div>
         </section>
         <!----------------------------------------------НАШИ ПРЕИМУЩЕСТВА---------------------------------------------------------------------------------------------------------------------------------------->
-        <section class="ourbenefits">
+        <section class="ourbenefits" id="ourbenefits">
             <div class="ourbenefitswrapper lg-hidden">
                 <h2 class="h2benefits">Наши преимущества</h2>
                 <div><img src="./imgs/Line.svg" class="orangeline orangeline2" alt="линия"></div>
                 <ul class="toolkitmain lg-hidden">
                     <li class="toolkits">
                         <img src="./imgs/Icon-1.svg" alt="1">
-                        <h3 class="podzagbenf">Работаем <br/>
+                        <h3 class="podzagbenf">Работаем <br />
                             по всей России</h3>
                         <div><img src="./imgs/Line.svg" class="orangeline2" alt="линия"></div>
                         <p class="opismall">Мы готовы произвести работы в любой точке России в максимально
@@ -328,7 +333,7 @@
                     </li>
                     <li class="toolkits">
                         <img src="./imgs/Icon-2.svg" alt="гарантиязначок">
-                        <h3 class="podzagbenf">Лучшее в классе <br/>оборудование</h3>
+                        <h3 class="podzagbenf">Лучшее в классе <br />оборудование</h3>
                         <div><img src="./imgs/Line.svg" class="orangeline2" alt="линия"></div>
                         <p class="opismall">Мы используем только насосы BBA pumps при проведении работ. Все
                             наши установки выпущены не позже 2017
@@ -336,7 +341,7 @@
                     </li>
                     <li class="toolkitslast">
                         <img src="./imgs/Icon-3.svg" alt="консультациязначок">
-                        <h3 class="podzagbenf">Бесплатный выезд и <br/>консультация</h3>
+                        <h3 class="podzagbenf">Бесплатный выезд и <br />консультация</h3>
                         <div><img src="./imgs/Line.svg" class="orangeline2" alt="линия"></div>
                         <p class="opismall">Бесплатный выезд и консультации в любой точке России, постоянная
                             поддержка и полное сопровождение работ
@@ -351,7 +356,7 @@
                 <ul class="toolkitmain2">
                     <li class="toolkitslast2">
                         <img src="./imgs/Icon-1.svg" alt="1">
-                        <h3 class="podzagbenf">Работаем <br/>
+                        <h3 class="podzagbenf">Работаем <br />
                             по всей России</h3>
                         <div><img src="./imgs/Line.svg" class="orangeline2" alt="линия"></div>
                         <p class="opismall">Мы готовы произвести работы в любой точке России в максимально
@@ -360,7 +365,7 @@
                     </li>
                     <li class="toolkitslast2">
                         <img src="./imgs/Icon-2.svg" alt="гарантиязначок">
-                        <h3 class="podzagbenf">Лучшее в классе <br/>оборудование</h3>
+                        <h3 class="podzagbenf">Лучшее в классе <br />оборудование</h3>
                         <div><img src="./imgs/Line.svg" class="orangeline2" alt="линия"></div>
                         <p class="opismall">Мы используем только насосы BBA pumps при проведении работ. Все
                             наши установки выпущены не позже 2017
@@ -368,7 +373,7 @@
                     </li>
                     <li class="toolkitslast2">
                         <img src="./imgs/Icon-3.svg" alt="консультациязначок">
-                        <h3 class="podzagbenf">Бесплатный выезд и <br/>консультация</h3>
+                        <h3 class="podzagbenf">Бесплатный выезд и <br />консультация</h3>
                         <div><img src="./imgs/Line.svg" class="orangeline2" alt="линия"></div>
                         <p class="opismall">Бесплатный выезд и консультации в любой точке России, постоянная
                             поддержка и полное сопровождение работ
@@ -378,7 +383,7 @@
             </div>
         </section>
         <!------------------------------------------------------------------ЗАКАЗЧИКИ----------------------------------------------------------------------------------------------------------------------------------------------->
-        <section class="customerssection">
+        <section class="customerssection" id="customerssection">
             <img src="./imgs/customersmini.svg" alt="узоры" class="customersmini lg-hidden">
             <div class="customers lg-hidden">
                 <h2 class="centertext h2b customersh2 lg-hidden">Заказчики</h2>
@@ -406,7 +411,7 @@
         </section>
         <!------------------------------------------------------------------КОНСУЛЬТАЦИИ----------------------------------------------------------------------------------------------------------------------------------------------->
 
-        <section class="consultation">
+        <section class="consultation" id="consultation">
             <div class="consultationwrapper lg-hidden">
                 <img src="./css/imgs2/graphicconsult.svg" class="graphicconsult lg-hidden" alt="декоративный элемент">
                 <h2 class="centertext consulth2">Закажите консультацию, расчет стоимости работ или выезд специалиста на
@@ -469,9 +474,9 @@
             </div>
         </section>
         <!-----------------------------------------НАШИ ОБЪЕКТЫ-------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
-        <section>
+        <section id="objects">
             <div class="objectswrapper lg-hidden">
-                <h2 class="h2b h2benefits">Наши <br/>объекты</h2>
+                <h2 class="h2b h2benefits">Наши <br />объекты</h2>
                 <div><img src="./imgs/Line.svg" class="orangeline orangeline2" alt="линия"></div>
                 <img src="./imgs/mother-russia.svg" alt="карта" class="rumap">
                 <div class="rumapdiv">
@@ -495,7 +500,7 @@
             </div>
         </section>
         <!------------------------------------------КОНТАКТЫ---------------------------------------------------------------------------------------->
-        <section class="contacts">
+        <section class="contacts" id="contacts">
             <div class="contactswrapper lg-hidden">
                 <h2 class="centertext lg-hidden">Контакты</h2>
                 <div><img src="./imgs/Line.svg" class="orangeline lg-hidden" alt="линия"></div>
@@ -503,10 +508,10 @@
                     <div class="orangebox">
                         <img src="./imgs/mail-i.svg" alt="иконкасообщения">
                         <p class="podzag900 orngtextpodzag">Cвязь с нами</p>
-                        <p class="podzag500w orngtextmrg">8 800 600-15-05 <br/> office@sahara-group.ru</p>
+                        <p class="podzag500w orngtextmrg">8 800 600-15-05 <br /> office@sahara-group.ru</p>
                         <img src="./imgs/location-i.svg" alt="иконкагеолокации">
                         <p class="podzag900 orngtextpodzag">Наша локация</p>
-                        <p class="podzag500w orngtextmrg">Ленинградская область, Новоприозерское ш.11 км.<br/> Трасса
+                        <p class="podzag500w orngtextmrg">Ленинградская область, Новоприозерское ш.11 км.<br /> Трасса
                             А-121
                         </p>
                     </div>
@@ -518,7 +523,7 @@
                 </div>
                 <form action="" method="get" class="formsmall">
                     <div class="formdivmain2">
-                        <p class="podzag500w formp2">Свяжитесь с нами удобным вам способом <br/> или оставьте заявку и
+                        <p class="podzag500w formp2">Свяжитесь с нами удобным вам способом <br /> или оставьте заявку и
                             наши
                             специалисты
                             позвонят
@@ -557,10 +562,10 @@
                         <div class="orangebox">
                             <img src="./imgs/mail-i.svg" alt="иконкасообщения">
                             <p class="podzag900 orngtextpodzag">Cвязь с нами</p>
-                            <p class="podzag500w orngtextmrg">8 800 600-15-05 <br/> office@sahara-group.ru</p>
+                            <p class="podzag500w orngtextmrg">8 800 600-15-05 <br /> office@sahara-group.ru</p>
                             <img src="./imgs/location-i.svg" alt="иконкагеолокации">
                             <p class="podzag900 orngtextpodzag">Наша локация</p>
-                            <p class="podzag500w orngtextmrg">Ленинградская область, Новоприозерское ш.11 км.<br/>
+                            <p class="podzag500w orngtextmrg">Ленинградская область, Новоприозерское ш.11 км.<br />
                                 Трасса
                                 А-121
                             </p>
@@ -574,7 +579,7 @@
                     <div class="cont-forms-lgmain">
                         <form action="" method="get" class="formsmall">
                             <div class="formdivmain22">
-                                <p class="podzag900b">Свяжитесь с нами удобным вам способом <br/> или оставьте
+                                <p class="podzag900b">Свяжитесь с нами удобным вам способом <br /> или оставьте
                                     заявку и
                                     наши
                                     специалисты
