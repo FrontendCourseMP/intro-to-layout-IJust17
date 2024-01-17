@@ -226,7 +226,7 @@ h2 {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    color: white;
+    color: black;
 }
 
 .h2b {
@@ -333,7 +333,7 @@ header {
     font-family: 'Roboto';
     font-weight: 500;
     line-height: normal;
-    color: #EFEFEF;
+    color: black;
     width: 207px;
     height: 43px;
     justify-content: center;
@@ -706,6 +706,7 @@ li {
     padding-top: 12px;
     padding-bottom: 12px;
     margin-top: 40px;
+    color:black;
 }
 
 .blockm {
@@ -1031,7 +1032,7 @@ li {
         font-style: normal;
         font-weight: 900;
         line-height: normal;
-        color: var(--color-orange);
+        color: var(--color----Blue);
     }
 
     .header-oline {
@@ -1433,7 +1434,7 @@ li {
         font-family: 'Roboto';
         font-weight: 500;
         line-height: normal;
-        color: #EFEFEF;
+        color: black;
         width: 207px;
         height: 43px;
         justify-content: center;
@@ -1687,3 +1688,11 @@ li {
     }
 }
 
+
+.contacts h2{
+    color: white;
+}
+
+.text1-1-1{
+    color: white;
+}
