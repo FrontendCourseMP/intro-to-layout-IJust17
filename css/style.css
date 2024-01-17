@@ -226,7 +226,7 @@ h2 {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    color: black;
+    color: white;
 }
 
 .h2b {
@@ -777,7 +777,7 @@ li {
     background-position-x: 50.5%;
     background-position-y: -3%;
     background-color: var(--color----Blue);
-}
+    opacity: 0.8;
 
 .footer1 {
     background-color: var(--color----Blue);
@@ -1686,3 +1686,4 @@ li {
         margin-right: 0px;
     }
 }
+
